@@ -2,8 +2,10 @@ import streamlit as st
 import requests
 import json
 import pandas as pd
+import os
 
 st.title("Web Results Sentiment Analysis")
+FLASK_BASE_URL = os.getenv("FLASK_BASE_URL") or "http://localhost:5000"
 
 # Sample search queries
 sample_queries = [
@@ -35,7 +37,7 @@ if st.button("Start Scraping"):
         with st.spinner('Scraping in progress...'):
             try:
                 # Start the scraping process
-                response = requests.post("http://localhost:5000/start_scraping", json={"query": query, "num_pages": num_pages})
+                response = requests.post(f"{FLASK_BASE_URL}/start_scraping", json={"query": query, "num_pages": num_pages})
                 response.raise_for_status()
                 st.success("Scraping started. Streaming results...")
 
@@ -46,7 +48,7 @@ if st.button("Start Scraping"):
                 table_placeholder = st.empty()
 
                 # Stream results in real-time
-                response = requests.get(f"http://localhost:5000/stream_results?query={query}", stream=True)
+                response = requests.get(f"{FLASK_BASE_URL}/stream_results?query={query}", stream=True)
                 for line in response.iter_lines():
                     if line:
                         result = json.loads(line)
