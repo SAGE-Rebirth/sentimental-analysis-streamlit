@@ -5,10 +5,25 @@ import pandas as pd
 import os
 import subprocess
 import time
+import threading
 
 # Constants
 FLASK_BASE_URL = "http://localhost:8502"
 FLASK_HEALTH_CHECK_URL = f"{FLASK_BASE_URL}/health"
+
+def install_dependencies():
+    """
+    Install Flask and Gunicorn if they are not already installed.
+    """
+    try:
+        # Check if Flask and Gunicorn are installed
+        import flask
+        import gunicorn
+    except ImportError:
+        # Install Flask and Gunicorn using pip
+        print("Installing Flask and Gunicorn...")
+        subprocess.run(["pip", "install", "flask", "gunicorn"], check=True)
+        print("Flask and Gunicorn installed successfully.")
 
 def is_flask_server_running():
     """
@@ -23,25 +38,30 @@ def is_flask_server_running():
 def start_flask_server():
     """
     Start the Flask server in production mode using Gunicorn.
-    Logs will be printed to the terminal where Streamlit is running.
+    This function will run in a separate thread.
     """
     try:
-        # Start the Flask server in the background and print logs to the terminal
-        subprocess.Popen(
-            ["python", "main.py"],
+        # Start the Flask server using Gunicorn
+        subprocess.run(
+            ["gunicorn", "--bind", "0.0.0.0:8502", "wsgi:app"],
             stdout=None,  # Print logs to the terminal
             stderr=None,  # Print errors to the terminal
             text=True
         )
-        st.info("Starting Flask server...")
-        # Wait for the server to start
-        time.sleep(5)
     except Exception as e:
-        st.error(f"Failed to start Flask server: {e}")
+        print(f"Failed to start Flask server: {e}")
+
+# Install Flask and Gunicorn if they are not already installed
+install_dependencies()
 
 # Check if the Flask server is running, and start it if not
 if not is_flask_server_running():
-    start_flask_server()
+    print("Starting Flask server in a separate thread...")
+    # Start the Flask server in a separate thread
+    flask_thread = threading.Thread(target=start_flask_server, daemon=True)
+    flask_thread.start()
+    # Wait for the server to start
+    time.sleep(5)
 
 # Streamlit app
 st.title("Web Results Sentiment Analysis")

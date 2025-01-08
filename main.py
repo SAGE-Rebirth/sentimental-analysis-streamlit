@@ -30,7 +30,7 @@ def run_prod():
 
 if __name__ == "__main__":
     # Check if the app is running in production mode
-    # if os.getenv("FLASK_ENV") == "production":
-    #     run_prod()
-    # else:
+    if os.getenv("FLASK_ENV") == "production":
+        run_prod()
+    else:
         run_dev()
