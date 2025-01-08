@@ -18,7 +18,7 @@ def run_dev():
     Run the Flask app in development mode.
     """
     print("Running in development mode...")
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=8502)
 
 def run_prod():
     """
@@ -30,7 +30,7 @@ def run_prod():
 
 if __name__ == "__main__":
     # Check if the app is running in production mode
-    if os.getenv("FLASK_ENV") == "production":
-        run_prod()
-    else:
+    # if os.getenv("FLASK_ENV") == "production":
+    #     run_prod()
+    # else:
         run_dev()
