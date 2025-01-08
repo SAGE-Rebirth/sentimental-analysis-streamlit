@@ -23,13 +23,15 @@ def is_flask_server_running():
 def start_flask_server():
     """
     Start the Flask server in production mode using Gunicorn.
+    Logs will be printed to the terminal where Streamlit is running.
     """
     try:
-        # Start the Flask server in the background
+        # Start the Flask server in the background and print logs to the terminal
         subprocess.Popen(
             ["gunicorn", "--bind", "0.0.0.0:8502", "wsgi:app"],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
+            stdout=None,  # Print logs to the terminal
+            stderr=None,  # Print errors to the terminal
+            text=True
         )
         st.info("Starting Flask server...")
         # Wait for the server to start
