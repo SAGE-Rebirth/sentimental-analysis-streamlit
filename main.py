@@ -1,10 +1,17 @@
-from flask import Flask
+from flask import Flask, jsonify
 from api.routes import initialize_routes
 import os
 
 # Initialize Flask app
 app = Flask(__name__)
 initialize_routes(app)
+
+@app.route('/health', methods=['GET'])
+def health_check():
+    """
+    Health check endpoint to verify if the Flask server is running.
+    """
+    return jsonify({"status": "ok"}), 200
 
 def run_dev():
     """

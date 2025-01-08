@@ -3,9 +3,46 @@ import requests
 import json
 import pandas as pd
 import os
+import subprocess
+import time
 
+# Constants
+FLASK_BASE_URL = "http://localhost:8502"
+FLASK_HEALTH_CHECK_URL = f"{FLASK_BASE_URL}/health"
+
+def is_flask_server_running():
+    """
+    Check if the Flask server is running by hitting the health check endpoint.
+    """
+    try:
+        response = requests.get(FLASK_HEALTH_CHECK_URL, timeout=2)
+        return response.status_code == 200
+    except requests.exceptions.RequestException:
+        return False
+
+def start_flask_server():
+    """
+    Start the Flask server in production mode using Gunicorn.
+    """
+    try:
+        # Start the Flask server in the background
+        subprocess.Popen(
+            ["gunicorn", "--bind", "0.0.0.0:8502", "wsgi:app"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
+        st.info("Starting Flask server...")
+        # Wait for the server to start
+        time.sleep(5)
+    except Exception as e:
+        st.error(f"Failed to start Flask server: {e}")
+
+# Check if the Flask server is running, and start it if not
+if not is_flask_server_running():
+    start_flask_server()
+
+# Streamlit app
 st.title("Web Results Sentiment Analysis")
-FLASK_BASE_URL = os.getenv("FLASK_BASE_URL") or "http://localhost:5000"
 
 # Sample search queries
 sample_queries = [
