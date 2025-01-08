@@ -43,7 +43,7 @@ def start_flask_server():
     try:
         # Start the Flask server using Gunicorn
         subprocess.run(
-            ["gunicorn", "--bind", "0.0.0.0:8502", "wsgi:app"],
+            ["python", "main.py"],
             stdout=None,  # Print logs to the terminal
             stderr=None,  # Print errors to the terminal
             text=True
