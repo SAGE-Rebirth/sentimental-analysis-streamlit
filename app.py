@@ -3,68 +3,9 @@ import requests
 import json
 import pandas as pd
 import os
-import subprocess
-import time
-import threading
 
-# Constants
-FLASK_BASE_URL = "http://localhost:8502"
-FLASK_HEALTH_CHECK_URL = f"{FLASK_BASE_URL}/health"
-
-def install_dependencies():
-    """
-    Install Flask and Gunicorn if they are not already installed.
-    """
-    try:
-        # Check if Flask and Gunicorn are installed
-        import flask
-        import gunicorn
-    except ImportError:
-        # Install Flask and Gunicorn using pip
-        print("Installing Flask and Gunicorn...")
-        subprocess.run(["pip", "install", "flask", "gunicorn"], check=True)
-        print("Flask and Gunicorn installed successfully.")
-
-def is_flask_server_running():
-    """
-    Check if the Flask server is running by hitting the health check endpoint.
-    """
-    try:
-        response = requests.get(FLASK_HEALTH_CHECK_URL, timeout=2)
-        return response.status_code == 200
-    except requests.exceptions.RequestException:
-        return False
-
-def start_flask_server():
-    """
-    Start the Flask server in production mode using Gunicorn.
-    This function will run in a separate thread.
-    """
-    try:
-        # Start the Flask server using Gunicorn
-        subprocess.run(
-            ["python", "main.py"],
-            stdout=None,  # Print logs to the terminal
-            stderr=None,  # Print errors to the terminal
-            text=True
-        )
-    except Exception as e:
-        print(f"Failed to start Flask server: {e}")
-
-# Install Flask and Gunicorn if they are not already installed
-install_dependencies()
-
-# Check if the Flask server is running, and start it if not
-if not is_flask_server_running():
-    print("Starting Flask server in a separate thread...")
-    # Start the Flask server in a separate thread
-    flask_thread = threading.Thread(target=start_flask_server, daemon=True)
-    flask_thread.start()
-    # Wait for the server to start
-    time.sleep(5)
-
-# Streamlit app
 st.title("Web Results Sentiment Analysis")
+FLASK_BASE_URL = os.getenv("FLASK_BASE_URL") or "http://localhost:5000"
 
 # Sample search queries
 sample_queries = [

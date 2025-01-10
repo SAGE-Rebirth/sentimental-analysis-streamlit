@@ -24,7 +24,7 @@ def initialize_routes(app):
         
         # Start the scraping process in a separate thread
         try:
-            threading.Thread(target=scrape_google_news, args=(query, num_pages)).start()
+            threading.Thread(target=scrape_google_news, args=(query)).start()
             logger.info(f"Scraping started for query: {query}")
             return jsonify({"message": "Scraping started", "query": query, "num_pages": num_pages}), 200
         except Exception as e:

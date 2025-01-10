@@ -1,24 +1,20 @@
-from flask import Flask, jsonify
+from flask import Flask
 from api.routes import initialize_routes
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
 
 # Initialize Flask app
 app = Flask(__name__)
 initialize_routes(app)
-
-@app.route('/health', methods=['GET'])
-def health_check():
-    """
-    Health check endpoint to verify if the Flask server is running.
-    """
-    return jsonify({"status": "ok"}), 200
 
 def run_dev():
     """
     Run the Flask app in development mode.
     """
     print("Running in development mode...")
-    app.run(debug=True, host="0.0.0.0", port=8502)
+    app.run(debug=True, host="0.0.0.0", port=5000)
 
 def run_prod():
     """
@@ -30,7 +26,7 @@ def run_prod():
 
 if __name__ == "__main__":
     # Check if the app is running in production mode
-    # if os.getenv("FLASK_ENV") == "production":
-    #     run_prod()
-    # else:
+    if os.getenv("FLASK_ENV") == "prod":
+        run_prod()
+    else:
         run_dev()
