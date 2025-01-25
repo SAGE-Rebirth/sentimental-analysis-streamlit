@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Marks & Spencer | Clothing, Home, Food & Gifts | M&S",
+        "snippet": "Shop on-trend womenswear, quality menswear, home and beauty essentials and mouth-watering food and drink. Order online with free delivery or collection at M&S",
+        "sentiment": "1 (Negative)",
+        "link": "https://www.marksandspencer.com/"
+    },
+    {
+        "title": "M | History, Etymology, & Pronunciation | Britannica",
+        "snippet": "History, etymology, and pronunciation of m, the thirteenth letter in the alphabet. It corresponds to the Semitic mem and to the Greek mu. The Semitic form may derive from an earlier sign representing waves of water. The sound represented by the letter has been from the beginning the labial nasal.",
+        "sentiment": "4 (Positive)",
+        "link": "https://www.britannica.com/topic/M-letter"
+    },
+    {
+        "title": "M - Wikipedia",
+        "snippet": "M is the thirteenth letter of the Latin alphabet, derived from the Phoenician Mem via the Greek Mu. It represents the voiced bilabial nasal /m/ in many languages and has various uses in writing, numerals, units, abbreviations and logos.",
+        "sentiment": "3 (Neutral)",
+        "link": "https://en.wikipedia.org/wiki/M"
+    },
+    {
+        "title": "m - Wiktionary, the free dictionary",
+        "snippet": "m is the thirteenth letter of the basic modern Latin alphabet and a numeral. It has various meanings and uses in different languages and contexts, such as a symbol for meter, a prefix for milli-, and an abbreviation for meter or meter per second.",
+        "sentiment": "3 (Neutral)",
+        "link": "https://en.wiktionary.org/wiki/m"
+    },
+    {
+        "title": "BMW M: Home of high performance cars",
+        "snippet": "M. The most powerful letter in the world. BMW M has been a key player in the exceptional history of motorsport and stands for high-performance and passion every day - on the road or on the track.",
+        "sentiment": "5 (Positive)",
+        "link": "https://www.bmw-m.com/en/index.html"
+    },
+    {
+        "title": "2000+ Amazing Words That Start with M - English Study Online",
+        "snippet": "M Words Example Sentences; Mother: My mother is the most important person in my life. Money: I need to save more money for my vacation. Music: I love listening to music while I work.",
+        "sentiment": "5 (Positive)",
+        "link": "https://englishstudyonline.org/words-that-start-with-m/"
+    },
+    {
+        "title": "M - Wikipédia, a enciclopédia livre",
+        "snippet": "Como a maioria das letras latinas, o m veio do alfabeto fenício, de letra mem.. A letra fenícia, por sua vez, veio da escrita protossinaítica, que adotou o hieroglifo egípcio representando água.Esse hieroglifo representava também a consoante /n/, a partir da palavra egípcia para água, nt.A adoção dessa letra como consoante /m/ supostamente também vem da mesma associação, a partir ...",
+        "sentiment": "1 (Negative)",
+        "link": "https://pt.wikipedia.org/wiki/M"
+    },
+    {
+        "title": "M (disambiguation) - Wikipedia",
+        "snippet": "M (fragrance), a 2008 fragrance by Mariah Carey M-series rangefinder, a series of Leica camera models; M (virtual assistant), a former virtual assistant in Facebook Messenger Macy's, Inc. (NYSE: M), an American department store chain Mercedes-Benz M-Class; Miracle Mart, a Canadian department store known simply as \"M\" from 1986 to 1992; Android M, a code name for the Android Marshmallow ...",
+        "sentiment": "3 (Neutral)",
+        "link": "https://en.wikipedia.org/wiki/M_(disambiguation)"
+    },
+    {
+        "title": "Convert mm to m",
+        "snippet": "Instant free online tool for millimeter to meter conversion or vice versa. The millimeter [mm] to meter [m] conversion table and conversion steps are also listed. Also, explore tools to convert millimeter or meter to other length units or learn more about length conversions.",
+        "sentiment": "3 (Neutral)",
+        "link": "https://www.unitconverters.net/length/mm-to-m.htm"
+    },
+    {
+        "title": "Letter M Song | ABCmouse",
+        "snippet": "ABCmouse is an award-winning digital early learning resource for kids ages 2 - 8. With more than 10,000 individual learning activities and more than 850 complete lessons encompassing all key academic subject areas — including math, reading, science, and social studies — ABCmouse has won numerous awards from national parent and educational organizations.",
+        "sentiment": "1 (Negative)",
+        "link": "https://www.abcmouse.com/learn/abcmouse/letter-m-song/937"
+    },
+    {
+        "title": "python - What is the purpose of the -m switch? - Stack Overflow",
+        "snippet": "The first line of the Rationale section of PEP 338 says:. Python 2.4 adds the command line switch -m to allow modules to be located using the Python module namespace for execution as scripts. The motivating examples were standard library modules such as pdb and profile, and the Python 2.4 implementation is fine for this limited purpose.. So you can specify any module in Python's search path ...",
+        "sentiment": "4 (Positive)",
+        "link": "https://stackoverflow.com/questions/7610001/what-is-the-purpose-of-the-m-switch"
+    },
+    {
+        "title": "M (1931 film) - Wikipedia",
+        "snippet": "M is a 1931 German mystery thriller film directed by Fritz Lang and starring Peter Lorre as Hans Beckert, a serial killer who targets children, in his third screen role. Both Lang's first sound film and an early example of a procedural drama, [2] M centers on the manhunt for Beckert conducted by both the police and organized crime. [3]The film's screenplay was written by Lang and his wife Thea ...",
+        "sentiment": "3 (Neutral)",
+        "link": "https://en.wikipedia.org/wiki/M_(1931_film)"
+    },
+    {
+        "title": "M&M's - Wikipedia",
+        "snippet": "Peanut M&M's have a different shape. M&M's are color-varied sugar-coated dragée chocolate confectionery, each of which has the letter \"m\" printed in lower case in white on one side, consisting of a candy shell surrounding a filling which varies depending upon the variety of M&M's. The original candy has a semi-sweet chocolate filling which, upon introduction of other variations, was branded ...",
+        "sentiment": "3 (Neutral)",
+        "link": "https://en.wikipedia.org/wiki/M&M's"
+    },
+    {
+        "title": "What does `m_` variable prefix mean? - Stack Overflow",
+        "snippet": "The m_ prefix is often used for member variables - I think its main advantage is that it helps create a clear distinction between a public property and the private member variable backing it:. int m_something public int Something => this.m_something; It can help to have a consistent naming convention for backing variables, and the m_ prefix is one way of doing that - one that works in case ...",
+        "sentiment": "3 (Neutral)",
+        "link": "https://stackoverflow.com/questions/13018189/what-does-m-variable-prefix-mean"
+    },
+    {
+        "title": "90+ M Symbols Copy & Paste - Ⓜ ⓜ м M m ᗰ ๓ ϻ 𝔪 𝓶",
+        "snippet": "Here is the complete list of M-letter text symbols (Ⓜ ⓜ м M m ᗰ Μ ๓ м м ϻ 𝔪 𝓶 𝓂 𝓜 𝐌 𝐦 𝕄 𝕞 ᵐ). Feel free to copy and paste these symbols for your use anywhere.",
+        "sentiment": "5 (Positive)",
+        "link": "https://omgsymbol.com/m/"
+    },
+    {
+        "title": "What is `^M` and how do I get rid of it? - Unix & Linux Stack Exchange",
+        "snippet": "The ^M is a carriage-return character. If you see this, you're probably looking at a file that originated in the DOS/Windows world, where an end-of-line is marked by a carriage return/newline pair, whereas in the Unix world, end-of-line is marked by a single newline.",
+        "sentiment": "3 (Neutral)",
+        "link": "https://unix.stackexchange.com/questions/32001/what-is-m-and-how-do-i-get-rid-of-it"
+    },
+    {
+        "title": "Women's Clothing | Women's Fashion | M&S - Marks & Spencer",
+        "snippet": "Find all of your must-have women's clothing and accessories here at M&S. From everyday essentials to smart workwear, we have a wide variety of contemporary fashion and investment pieces.. In our collection of womenswear, you'll find timeless coats and jackets, including tailored single-breasted blazers and classic trenches.Think elegant dresses with modern geometric prints and traditional ...",
+        "sentiment": "5 (Positive)",
+        "link": "https://www.marksandspencer.com/c/women"
+    },
+    {
+        "title": "M Resort - Wikipedia",
+        "snippet": "M Resort Spa Casino is a boutique hotel, spa, and casino in Henderson, Nevada. [1] It is owned by Gaming and Leisure Properties and operated by Penn Entertainment.The property includes a 92,000 sq ft (8,500 m 2) casino and a 16-story tower with 390 rooms.The M Resort is located eight miles south of the Las Vegas Strip, and is the southernmost casino in the Las Vegas Valley.",
+        "sentiment": "4 (Positive)",
+        "link": "https://en.wikipedia.org/wiki/M_Resort"
+    },
+    {
+        "title": "M State",
+        "snippet": "\"Unlike other programs at bigger schools, M State doesn't beat around the bush - they let you go straight into what you want to do. I like how small and personal it is, and it's a lot more affordable here, too.\"",
+        "sentiment": "5 (Positive)",
+        "link": "https://www.minnesota.edu/"
+    },
+    {
+        "title": "What Do \"A.M.\" And \"P.M.\" Stand For? | Dictionary.com",
+        "snippet": "What does a.m. mean?. The term we associate with the morning, a.m., is an abbreviation of the Latin phrase ante merīdiem meaning \"before midday.\" What does p.m. mean?. P.m. is an abbreviation of post merīdiem, meaning—you guessed it—\"after midday.\". These two terms help keep ambiguity at bay in the 12-hour time system. What does m. mean?. There is a third, lesser-known ...",
+        "sentiment": "3 (Neutral)",
+        "link": "https://www.dictionary.com/e/what-do-am-and-pm-stand-for/"
+    },
+    {
+        "title": "M Symbols | 𝓜 Ⓜ 𝐌 𝕄 - MadeInText.com",
+        "snippet": "M Symbols are text icons that you can copy and paste like regular text. These M Symbols can be used in any desktop, web, or phone application.",
+        "sentiment": "5 (Positive)",
+        "link": "https://www.madeintext.com/m-symbols/"
+    },
+    {
+        "title": "M - Simple English Wikipedia, the free encyclopedia",
+        "snippet": "In calendars, M sometimes means Monday or means one of the months \"March\" or \"May\".; In money, M means million, such as $25M (twenty-five million dollars).; In the SI, m is the symbol for the metre.; In Roman numerals, M means one thousand.; M is also the name of a 1930 German movie made by Fritz Lang and its 1951 remake.",
+        "sentiment": "3 (Neutral)",
+        "link": "https://simple.wikipedia.org/wiki/M"
+    },
+    {
+        "title": "Power Query M formula language reference - PowerQuery M",
+        "snippet": "Power Query M formula language. Microsoft Power Query provides a powerful data import experience that encompasses many features. Power Query works with desktop Analysis Services, Excel, and Power BI workbooks, in addition to many online services, such as Fabric, Power BI service, Power Apps, Microsoft 365 Customer Insights, and more.",
+        "sentiment": "5 (Positive)",
+        "link": "https://learn.microsoft.com/en-us/powerquery-m/"
+    },
+    {
+        "title": "M&M'S Configurator | M&M'S",
+        "snippet": "M&M'S Configurator. make every celebration special. celebrate every moment big and small with personalized party favors, gifts, and more!",
+        "sentiment": "5 (Positive)",
+        "link": "https://www.mms.com/en-us/configurator"
+    },
+    {
+        "title": "'M' in Different Fonts (𝗰𝗼𝗽𝘆 αɳԃ 𝕡𝕒𝕤𝕥𝕖)",
+        "snippet": "See above for 'M' different fonts! That includes M in cursive, bold, italic, gothic/medieval, cute/aesthetic, curly, monospace, and lots more.",
+        "sentiment": "5 (Positive)",
+        "link": "https://instafonts.io/different-fonts/m"
+    },
+    {
+        "title": "solve for m - Symbolab",
+        "snippet": "Free Pre-Algebra, Algebra, Trigonometry, Calculus, Geometry, Statistics and Chemistry calculators step-by-step",
+        "sentiment": "1 (Negative)",
+        "link": "https://www.symbolab.com/solver/step-by-step/solve+for+m"
+    },
+    {
+        "title": "M&M's - Target",
+        "snippet": "Shop Target for a wide assortment of M&M's. Choose from Same Day Delivery, Drive Up or Order Pickup. Free standard shipping with $35 orders. Expect More. Pay Less.",
+        "sentiment": "1 (Negative)",
+        "link": "https://www.target.com/b/m-s/-/N-560n4"
+    },
+    {
+        "title": "M&P 2.0 FULL SIZE | Smith & Wesson",
+        "snippet": "Reliability Matters. The full-size M&P M2.0 pistol delivers an advanced platform for personal, sporting, and professional use.",
+        "sentiment": "2 (Negative)",
+        "link": "https://www.smith-wesson.com/products/mp2-full-size"
+    },
+    {
+        "title": "Letter M Online Activities for Kids - Starfall",
+        "snippet": "Moon, mountain, masks, and motorcycle all begin with the letter M! Learn more about the letter M sound with this interactive activity.",
+        "sentiment": "3 (Neutral)",
+        "link": "https://www.starfall.com/h/abcs/letter-m/"
+    },
+    {
+        "title": "M - 나무위키",
+        "snippet": "유명한 M16 소총부터 M1 에이브람스 전차까지 미합중국군의 장비들은 명칭 앞에 모두 M이 붙는다. 이는 'Model'의 약자이다. [2] 의외로 이것이 무엇의 약자인지는 다들 관심이 없다보니 'Military'나 다른 단어의 약자인 줄 아는 사람도 있고 심지어 군대에서는 'Mi-Goon(미군)'의 약자란 말을 하는 조교도 있다",
+        "sentiment": "3 (Neutral)",
+        "link": "https://namu.wiki/w/M"
+    }
+]
